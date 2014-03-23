@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "flatblog";
+  src:url("fonts/flatblog.eot");
+  src:url("fonts/flatblog.eot?#iefix") format("embedded-opentype"),
+    url("fonts/flatblog.woff") format("woff"),
+    url("fonts/flatblog.ttf") format("truetype"),
+    url("fonts/flatblog.svg#flatblog") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "flatblog" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "flatblog" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-list:before {
+  content: "a";
+}
+.icon-plus:before {
+  content: "b";
+}
+.icon-results:before {
+  content: "c";
+}
+.icon-plus-squared:before {
+  content: "d";
+}
+.icon-plus-circled:before {
+  content: "e";
+}
+.icon-thumbnails:before {
+  content: "f";
+}
+.icon-user:before {
+  content: "g";
+}

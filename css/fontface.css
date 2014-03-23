@@ -1,0 +1,94 @@
+/* 
+    Document   : fontface
+    Created on : Jan 11, 2014, 3:01:03 PM
+    Author     : pc
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+@font-face{
+    font-family: 'Allan';
+    src: url(../font/Allan-Regular.ttf);
+}
+@font-face{
+    font-family: 'Allan';
+    src: url(font/Allan-Bold.ttf);
+    font-weight: 700;
+}
+@font-face{
+    font-family: 'News Cycle';
+    src: url(../font/News_Cycle/NewsCycle-Regular.ttf);
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'Limelight';
+    src: url(../font/Limelight/Limelight-Regular.ttf);
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'Poiret One';
+    src: url(../font/Poiret_One/PoiretOne-Regular.ttf);
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'Racing Sans One';
+    src: url(../font/Racing_Sans_One/RacingSansOne-Regular.ttf);
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'Montserrat Alternates';
+    src: url(../font/Montserrat_Alternates/MontserratAlternates-Regular.ttf);
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'Raleway';
+    src: url(../font/Raleway/Raleway-Light.ttf);
+    font-weight: 300;
+}
+@font-face{
+    font-family: 'Raleway';
+    src: url(../font/Raleway/Raleway-Regular.ttf);
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'Raleway';
+    src: url(../font/Raleway/Raleway-SemiBold.ttf);
+    font-weight: 600;
+}
+@font-face{
+    font-family: "Open Sans";
+    src: url(../font/Open_Sans/OpenSans-Light.ttf);
+    font-weight: 300;
+}
+@font-face{
+    font-family: "Open Sans";
+    src: url(../font/Open_Sans/OpenSans-Regular.ttf);
+    font-weight: 400;
+}
+@font-face{
+    font-family: "Open Sans";
+    src: url(../font/Open_Sans/OpenSans-Bold.ttf);
+    font-weight: 700;
+}
+@font-face{
+    font-family: "Open Sans";
+    src: url(../font/Open_Sans/OpenSans-LightItalic.ttf);
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face{
+    font-family: "Open Sans";
+    src: url(../font/Open_Sans/OpenSans-Italic.ttf);
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face{
+    font-family: "Open Sans";
+    src: url(../font/Open_Sans/OpenSans-BoldItalic.ttf);
+    font-weight: 700;
+    font-style: italic;
+}
