@@ -5,7 +5,8 @@
     Description:
         Purpose of the stylesheet follows.
 */
-
+@import url('../font/icon_fonts/flatblog/styles.css');
+@import url('../font/icon_fonts/dotaassem/styles.css');
 root { 
     display: block;
 }

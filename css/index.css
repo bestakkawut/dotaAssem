@@ -1,6 +1,13 @@
 html ,body{
-    height: 100%;        
+    height: 100%;
+    overflow: hidden;
 }
+a{
+    text-decoration: none;
+}
+
+
+
 .content{
     width: 100%;height: 100%;
     padding: 100px 0;
@@ -48,6 +55,9 @@ html ,body{
     padding: 100px 0;
     margin: 0 auto;
 }
+
+
+
 div[class*="box-"]{
     width: 150px;
     height: 150px;
@@ -58,6 +68,8 @@ div[class*="box-"]{
 }
 div[class*="box-div-"] .first{
     -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    transition: 0.4s;
     width: 150px;
     height: 150px;
     position: relative;            
@@ -70,7 +82,13 @@ div[class*="box-div-"] .second{
     position: relative;
     background: tomato;
     -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    transition: 0.4s;
 }
+
+
+
+/** add picture  **/
 div[class="box-div-one"] .first{
     background: url('../img/one.jpg');
     background-position: center;
@@ -107,18 +125,45 @@ div[class="box-div-seven"] .first{
     background-size: cover;
 }
 
-
+/** hover first and second div**/
 div[class*="box-div-"]:hover .first{
     -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    transition: 0.4s;
     margin-top: -150px;
 }
 div[class*="box-div-"]:hover .second{
     -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    transition: 0.4s;
     margin-top: 0px;
 }
+
+
+
 
 .second-text{
     font-family: 'Open sans';
     font-weight: 400;
     position: relative;
 }
+.icon_fb_box{
+    margin-top: 10px;
+    padding: 10px 8px;
+}
+.icon_fb{    
+    font-size: 2rem;    
+}
+.icon_fb a{
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    transition: 0.4s;
+    color: rgb(255,255,255);
+}
+.icon_fb a:hover{
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+    color: rgb(31, 58, 147);
+}
+
