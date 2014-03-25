@@ -1,125 +1,98 @@
 html ,body{
-  height: 100%;
+    height: 100%;
+    font-family: 'Open sans';
 }
 .content{
-  height: 100%;
-  width: 100%;
-  padding: 100px 0;
-  margin: 0 auto;
-  background: #333;
-  box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    padding: 100px 0;
+    margin: 0 auto;
+    background: #333;
+    box-sizing: border-box;
 }
-
 #first-page{
-  height: 100%;
-  width: 100%;
-  background: white;
-  padding: 20px 100px;
-  position: fixed;
-  overflow: hidden;
-  box-sizing: border-box;
-}
-#first-page h1{
-  font-family: 'Open sans';
-  font-size: 13rem;
-  cursor: default;
-  text-align: center;
+    height: 100%;
+    width: 100%;
+    background: white;
+    padding: 20px 100px;
+    position: fixed;
+    overflow: hidden;
+    box-sizing: border-box;
+    h1{
+      font-size: 13rem;
+      cursor: default;
+      text-align: center;
+    }
 }
 #topic-top {
-  background: #fb565e;
-  padding: 5px;
-  box-sizing: border-box;
-  div{
-    height: auto;
     background: #fb565e;
-    position: relative;
+    padding: 5px;
     box-sizing: border-box;
-  }
-  h1{
-    font-family: 'Open sans';
-    font-size: 2rem;
-    font-weight: 400;
-    position: relative;
-    text-align: right;
+    div{
+        height: auto;
+        background: #fb565e;
+        position: relative;
+        box-sizing: border-box;
+    }
+    h1{
+        font-family: 'Open sans';
+        font-size: 2rem;
+        font-weight: 400;
+        position: relative;
+        text-align: right;
   }
 }
-
 #big_box{
-  width: 80%;
-  padding: 100px 0;
-  margin: 0 auto;
+      width: 80%;
+      padding: 100px 0;
+      margin: 0 auto;
 }
 div[class*="box-"]{
-  width: 150px;
-  height: 150px;
-  background: #333;
-  display: inline-block;
-  /*margin-right: -4px;*/
-  overflow: hidden;
+    width: 150px;
+    height: 150px;
+    background: #333;
+    display: inline-block;
+    overflow: hidden;
+    &[class*="div-"]{
+        .first{
+            -webkit-transition: 0.4s;
+            width: 150px;
+            height: 150px;
+            position: relative;
+        }
+        .second{
+            width: 150px;
+            height: 150px;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            background: tomato;
+            -webkit-transition: 0.4s;
+        }
+    }
 }
-div[class*="box-div-"] .first{
-  -webkit-transition: 0.4s;
-  width: 150px;
-  height: 150px;
-  position: relative;
+$aa : 1;
+$first-div :('box-div-one','box-div-two','box-div-three','box-div-four','box-div-five','box-div-six','box-div-seven');
+$first-img :('../img/one.jpg','../img/two.jpg','../img/three.jpg','../img/four.jpg','../img/five.jpg','../img/six.jpg','../img/seven.jpg');
+@for $a from 1 through 7{
+  div.#{nth($first-div , $a)} .first {
+      background: url( nth($first-img , $a) );
+      background-position: center;
+      background-size: cover;
+  }
 }
-div[class*="box-div-"] .second{
-  width: 150px;
-  height: 150px;
-  padding: 20px 0;
-  text-align: center;
-  position: relative;
-  background: tomato;
-  -webkit-transition: 0.4s;
-}
-div[class="box-div-one"] .first{
-  background: url('../img/one.jpg');
-  background-position: center;
-  background-size: cover;
-}
-div[class="box-div-two"] .first{
-  background: url('../img/two.jpg');
-  background-position: center;
-  background-size: cover;
-}
-div[class="box-div-three"] .first{
-  background: url('../img/three.jpg');
-  background-position: center;
-  background-size: cover;
-}
-div[class="box-div-four"] .first{
-  background: url('../img/four.jpg');
-  background-position: center;
-  background-size: cover;
-}
-div[class="box-div-five"] .first{
-  background: url('../img/five.jpg');
-  background-position: top;
-  background-size: cover;
-}
-div[class="box-div-six"] .first{
-  background: url('../img/six.jpg');
-  background-position: center;
-  background-size: cover;
-}
-div[class="box-div-seven"] .first{
-  background: url('../img/seven.jpg');
-  background-position: center;
-  background-size: cover;
-}
-
-
-div[class*="box-div-"]:hover .first{
-  -webkit-transition: 0.4s;
-  margin-top: -150px;
-}
-div[class*="box-div-"]:hover .second{
-  -webkit-transition: 0.4s;
-  margin-top: 0px;
+div[class*="box-div-"]:hover{
+    .first{
+        -webkit-transition: 0.4s;
+        margin-top: -150px;
+    }
+    .second{
+        -webkit-transition: 0.4s;
+        margin-top: 0px;
+    }
 }
 
 .second-text{
-  font-family: 'Open sans';
-  font-weight: 400;
-  position: relative;
+    font-weight: 400;
+    position: relative;
 }
