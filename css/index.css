@@ -1,3 +1,4 @@
+/*<<<<<<< HEAD*/
 html ,body{
     height: 100%;
     overflow: hidden;
@@ -166,4 +167,7 @@ div[class*="box-div-"]:hover .second{
     transition: 0.3s;
     color: rgb(31, 58, 147);
 }
-
+/*
+=======
+html,body{height:100%;font-family:'Open sans'}.content{height:100%;width:100%;padding:100px 0;margin:0 auto;background:#333;box-sizing:border-box}#first-page{height:100%;width:100%;background:white;padding:20px 100px;position:fixed;overflow:hidden;box-sizing:border-box}#first-page h1{font-size:13rem;cursor:default;text-align:center}#topic-top{background:#fb565e;padding:5px;box-sizing:border-box}#topic-top div{height:auto;background:#fb565e;position:relative;box-sizing:border-box}#topic-top h1{font-family:'Open sans';font-size:2rem;font-weight:400;position:relative;text-align:right}#big_box{width:80%;padding:100px 0;margin:0 auto}div[class*="box-"]{width:150px;height:150px;background:#333;display:inline-block;overflow:hidden}div[class*="box-"][class*="div-"] .first{-webkit-transition:0.4s;width:150px;height:150px;position:relative}div[class*="box-"][class*="div-"] .second{width:150px;height:150px;padding:20px 0;text-align:center;position:relative;background:tomato;-webkit-transition:0.4s}div.box-div-one .first{background:url("../img/one.jpg");background-position:center;background-size:cover}div.box-div-two .first{background:url("../img/two.jpg");background-position:center;background-size:cover}div.box-div-three .first{background:url("../img/three.jpg");background-position:center;background-size:cover}div.box-div-four .first{background:url("../img/four.jpg");background-position:center;background-size:cover}div.box-div-five .first{background:url("../img/five.jpg");background-position:center;background-size:cover}div.box-div-six .first{background:url("../img/six.jpg");background-position:center;background-size:cover}div.box-div-seven .first{background:url("../img/seven.jpg");background-position:center;background-size:cover}div[class*="box-div-"]:hover .first{-webkit-transition:0.4s;margin-top:-150px}div[class*="box-div-"]:hover .second{-webkit-transition:0.4s;margin-top:0px}.second-text{font-weight:400;position:relative}
+>>>>>>> f867fc5b58f82cf68386b2a837fb3744015934fe*/
